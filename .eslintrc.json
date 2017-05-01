@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "airbnb"
+  ],
+  "plugins": [
+    "compat"
+  ],
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "arrow-body-style": ["error", "as-needed", { "requireReturnForObjectLiteral": true }],
+    "no-confusing-arrow": ["error", { "allowParens": true }],
+    "no-debugger": ["warn"],
+    "react/sort-comp": ["warn", {
+      "order": [
+        "props",
+        "state",
+        "static-methods",
+        "lifecycle",
+        "everything-else",
+        "render"
+      ]
+    }],
+    "linebreak-style": "off",
+    "no-unexpected-multiline": "error",
+    "compat/compat": "error",
+    "require-await": "error",
+    "no-return-await": "error",
+    "no-await-in-loop": "error"
+  }
+}
